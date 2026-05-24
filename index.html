@@ -1,219 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tears Hub</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:'Inter',sans-serif;
-    }
-
-    body{
-      background:#0f1117;
-      color:#e5e7eb;
-      min-height:100vh;
-    }
-
-    .container{
-      width:100%;
-      max-width:1150px;
-      margin:auto;
-      padding:24px;
-    }
-
-    .navbar{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      background:#161a22;
-      border:1px solid #232938;
-      border-radius:18px;
-      padding:14px 18px;
-    }
-
-    .logo{
-      display:flex;
-      align-items:center;
-      gap:14px;
-    }
-
-    .logo img{
-      width:42px;
-      height:42px;
-      border-radius:50%;
-    }
-
-    .logo h1{
-      font-size:1.05rem;
-      font-weight:600;
-      color:#f3f4f6;
-    }
-
-    .nav-links{
-      display:flex;
-      gap:10px;
-    }
-
-    .nav-links a{
-      text-decoration:none;
-      color:#cbd5e1;
-      padding:10px 16px;
-      border-radius:12px;
-      transition:0.2s;
-      font-size:0.95rem;
-    }
-
-    .nav-links a:hover{
-      background:#1d2430;
-    }
-
-    .active{
-      background:#202938;
-      color:white !important;
-    }
-
-    .hero{
-      display:grid;
-      grid-template-columns:1.1fr 0.9fr;
-      gap:60px;
-      align-items:center;
-      min-height:80vh;
-    }
-
-    .hero-left h2{
-      font-size:4rem;
-      line-height:1;
-      margin-bottom:24px;
-      letter-spacing:-2px;
-    }
-
-    .hero-left p{
-      color:#9ca3af;
-      line-height:1.7;
-      max-width:520px;
-      margin-bottom:32px;
-      font-size:1rem;
-    }
-
-    .buttons{
-      display:flex;
-      gap:14px;
-    }
-
-    .btn{
-      text-decoration:none;
-      padding:13px 20px;
-      border-radius:12px;
-      font-weight:500;
-      transition:0.2s;
-      font-size:0.95rem;
-    }
-
-    .btn-primary{
-      background:#202938;
-      border:1px solid #2a3344;
-      color:white;
-    }
-
-    .btn-primary:hover{
-      background:#2a3344;
-    }
-
-    .btn-secondary{
-      background:#161a22;
-      border:1px solid #232938;
-      color:#cbd5e1;
-    }
-
-    .btn-secondary:hover{
-      background:#1b2130;
-    }
-
-    .card{
-      background:#161a22;
-      border:1px solid #232938;
-      border-radius:22px;
-      padding:28px;
-    }
-
-    .card-top{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      margin-bottom:30px;
-    }
-
-    .card-top h3{
-      font-size:1.35rem;
-      font-weight:600;
-    }
-
-    .status{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      color:#cbd5e1;
-      font-size:0.95rem;
-    }
-
-    .status svg{
-      width:18px;
-      height:18px;
-      fill:#7c86ff;
-    }
-
-    .label{
-      color:#9ca3af;
-      margin-bottom:12px;
-      font-size:0.95rem;
-    }
-
-    .progress-bar{
-      width:100%;
-      height:14px;
-      background:#202938;
-      border-radius:999px;
-      overflow:hidden;
-    }
-
-    .progress{
-      width:12%;
-      height:100%;
-      background:#7c86ff;
-      border-radius:999px;
-    }
-
-    .percent{
-      margin-top:12px;
-      color:#d1d5db;
-      font-size:0.95rem;
-    }
-
-    @media(max-width:900px){
-
-      .hero{
-        grid-template-columns:1fr;
-        padding-top:60px;
-      }
-
-      .hero-left h2{
-        font-size:2.8rem;
-      }
-
-      .navbar{
-        flex-direction:column;
-        gap:18px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -237,13 +32,11 @@
 
       <div class="hero-left">
 
-        <h2>
-          Tears Hub
-        </h2>
+        <h2>Tears Hub</h2>
 
         <p>
-          Small experimental website for Crimson Labs projects,
-          tools and development progress.
+          Personal hobby project for Crimson Labs.
+          Small experiments, tools and web development progress.
         </p>
 
         <div class="buttons">
@@ -282,6 +75,10 @@
       </div>
 
     </section>
+
+    <footer>
+      © 2026 Tears Hub
+    </footer>
 
   </div>
 
