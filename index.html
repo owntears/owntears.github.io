@@ -17,34 +17,26 @@
     }
 
     body{
-      background:
-      radial-gradient(circle at top left, rgba(99,102,241,0.20), transparent 30%),
-      radial-gradient(circle at bottom right, rgba(168,85,247,0.20), transparent 30%),
-      #06070d;
-      color:white;
+      background:#0f1117;
+      color:#e5e7eb;
       min-height:100vh;
-      overflow-x:hidden;
     }
 
-    .navbar-wrapper{
+    .container{
       width:100%;
-      display:flex;
-      justify-content:center;
-      padding-top:25px;
+      max-width:1150px;
+      margin:auto;
+      padding:24px;
     }
 
     .navbar{
-      width:90%;
-      max-width:1100px;
       display:flex;
-      justify-content:space-between;
       align-items:center;
-      padding:16px 26px;
-      border-radius:22px;
-      background:rgba(255,255,255,0.04);
-      border:1px solid rgba(255,255,255,0.06);
-      backdrop-filter:blur(18px);
-      box-shadow:0 10px 40px rgba(0,0,0,0.35);
+      justify-content:space-between;
+      background:#161a22;
+      border:1px solid #232938;
+      border-radius:18px;
+      padding:14px 18px;
     }
 
     .logo{
@@ -54,127 +46,114 @@
     }
 
     .logo img{
-      width:50px;
-      height:50px;
+      width:42px;
+      height:42px;
       border-radius:50%;
-      border:2px solid rgba(99,102,241,0.45);
     }
 
     .logo h1{
-      font-size:1.2rem;
-      font-weight:700;
-      background:linear-gradient(90deg,#60a5fa,#a855f7);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
+      font-size:1.05rem;
+      font-weight:600;
+      color:#f3f4f6;
     }
 
     .nav-links{
       display:flex;
-      gap:14px;
+      gap:10px;
     }
 
     .nav-links a{
-      color:#dbeafe;
       text-decoration:none;
-      padding:10px 18px;
-      border-radius:14px;
-      transition:0.25s;
-      font-weight:500;
+      color:#cbd5e1;
+      padding:10px 16px;
+      border-radius:12px;
+      transition:0.2s;
+      font-size:0.95rem;
     }
 
     .nav-links a:hover{
-      background:rgba(255,255,255,0.06);
+      background:#1d2430;
     }
 
     .active{
-      background:linear-gradient(90deg,#2563eb,#7c3aed);
+      background:#202938;
+      color:white !important;
     }
 
     .hero{
-      width:100%;
-      min-height:85vh;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      padding:50px 8%;
-    }
-
-    .hero-box{
-      width:100%;
-      max-width:1200px;
       display:grid;
-      grid-template-columns:1fr 1fr;
+      grid-template-columns:1.1fr 0.9fr;
       gap:60px;
       align-items:center;
+      min-height:80vh;
     }
 
-    .hero-text h2{
-      font-size:4.2rem;
-      line-height:1.05;
-      margin-bottom:20px;
+    .hero-left h2{
+      font-size:4rem;
+      line-height:1;
+      margin-bottom:24px;
+      letter-spacing:-2px;
     }
 
-    .gradient{
-      background:linear-gradient(90deg,#60a5fa,#a855f7);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-    }
-
-    .hero-text p{
-      color:#94a3b8;
-      font-size:1.08rem;
+    .hero-left p{
+      color:#9ca3af;
       line-height:1.7;
       max-width:520px;
-      margin-bottom:35px;
+      margin-bottom:32px;
+      font-size:1rem;
     }
 
     .buttons{
       display:flex;
-      gap:16px;
+      gap:14px;
     }
 
     .btn{
       text-decoration:none;
-      padding:14px 24px;
-      border-radius:16px;
-      transition:0.25s;
-      font-weight:600;
+      padding:13px 20px;
+      border-radius:12px;
+      font-weight:500;
+      transition:0.2s;
+      font-size:0.95rem;
     }
 
     .btn-primary{
-      background:linear-gradient(90deg,#2563eb,#7c3aed);
+      background:#202938;
+      border:1px solid #2a3344;
       color:white;
-      box-shadow:0 0 25px rgba(99,102,241,0.30);
     }
 
     .btn-primary:hover{
-      transform:translateY(-2px);
+      background:#2a3344;
     }
 
     .btn-secondary{
-      border:1px solid rgba(255,255,255,0.08);
-      background:rgba(255,255,255,0.03);
-      color:#dbeafe;
+      background:#161a22;
+      border:1px solid #232938;
+      color:#cbd5e1;
     }
 
-    .preview-card{
-      background:rgba(255,255,255,0.04);
-      border:1px solid rgba(255,255,255,0.06);
-      border-radius:28px;
-      padding:32px;
-      backdrop-filter:blur(18px);
-      box-shadow:0 10px 40px rgba(0,0,0,0.35);
+    .btn-secondary:hover{
+      background:#1b2130;
     }
 
-    .preview-top{
+    .card{
+      background:#161a22;
+      border:1px solid #232938;
+      border-radius:22px;
+      padding:28px;
+    }
+
+    .card-top{
       display:flex;
-      justify-content:space-between;
       align-items:center;
+      justify-content:space-between;
       margin-bottom:30px;
     }
 
-    .preview-top h3{
-      font-size:1.4rem;
+    .card-top h3{
+      font-size:1.35rem;
+      font-weight:600;
     }
 
     .status{
@@ -182,46 +161,51 @@
       align-items:center;
       gap:10px;
       color:#cbd5e1;
-      font-weight:500;
+      font-size:0.95rem;
     }
 
     .status svg{
-      width:20px;
-      height:20px;
-      fill:#60a5fa;
+      width:18px;
+      height:18px;
+      fill:#7c86ff;
+    }
+
+    .label{
+      color:#9ca3af;
+      margin-bottom:12px;
+      font-size:0.95rem;
     }
 
     .progress-bar{
       width:100%;
-      height:18px;
+      height:14px;
+      background:#202938;
       border-radius:999px;
-      background:#0f172a;
       overflow:hidden;
-      margin-top:14px;
     }
 
     .progress{
       width:12%;
       height:100%;
+      background:#7c86ff;
       border-radius:999px;
-      background:linear-gradient(90deg,#3b82f6,#8b5cf6);
-      box-shadow:0 0 20px rgba(99,102,241,0.45);
     }
 
     .percent{
       margin-top:12px;
-      color:#60a5fa;
-      font-weight:600;
+      color:#d1d5db;
+      font-size:0.95rem;
     }
 
     @media(max-width:900px){
 
-      .hero-box{
+      .hero{
         grid-template-columns:1fr;
+        padding-top:60px;
       }
 
-      .hero-text h2{
-        font-size:3rem;
+      .hero-left h2{
+        font-size:2.8rem;
       }
 
       .navbar{
@@ -233,7 +217,8 @@
 </head>
 <body>
 
-  <div class="navbar-wrapper">
+  <div class="container">
+
     <nav class="navbar">
 
       <div class="logo">
@@ -247,23 +232,18 @@
       </div>
 
     </nav>
-  </div>
 
-  <section class="hero">
+    <section class="hero">
 
-    <div class="hero-box">
-
-      <div class="hero-text">
+      <div class="hero-left">
 
         <h2>
-          Modern.<br>
-          Clean.<br>
-          <span class="gradient">Tears Hub</span>
+          Tears Hub
         </h2>
 
         <p>
-         tears hub is a clean modern website for the Hobby Org "Crimson Labs" by owntears.
-          Currently under Construction.
+          Small experimental website for Crimson Labs projects,
+          tools and development progress.
         </p>
 
         <div class="buttons">
@@ -273,16 +253,16 @@
 
       </div>
 
-      <div class="preview-card">
+      <div class="card">
 
-        <div class="preview-top">
+        <div class="card-top">
 
           <h3>Website Progress</h3>
 
           <div class="status">
 
-            <svg role="img" viewBox="0 0 24 24">
-              <path d="M12 0L1.605 6v12L12 24l10.395-6V6L12 0zm0 2.197l8.395 4.848v9.91L12 21.803l-8.395-4.848v-9.91L12 2.197z"/>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 0L1.605 6v12L12 24l10.395-6V6L12 0zm0 2.4l8.1 4.7v9.4l-8.1 4.7-8.1-4.7V7.1L12 2.4z"/>
             </svg>
 
             <span>In Development</span>
@@ -291,7 +271,7 @@
 
         </div>
 
-        <p style="color:#94a3b8;">Current Progress</p>
+        <div class="label">Current Progress</div>
 
         <div class="progress-bar">
           <div class="progress"></div>
@@ -301,9 +281,9 @@
 
       </div>
 
-    </div>
+    </section>
 
-  </section>
+  </div>
 
 </body>
 </html>
